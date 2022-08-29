@@ -1,0 +1,125 @@
+* {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    border:none;
+}
+
+body {
+    background-color: #333333;
+    height: 100%;
+}
+
+header {
+    height:100px;
+    width:100%;
+    background-color: rgb(30, 30, 30);
+}
+
+header nav {
+    height:100px;
+    width:100%;
+}
+
+header nav img {
+    position:relative;
+    left:5%;
+    height:100px;
+    width:100px;
+}
+
+header nav ul {
+    height:100px;
+    width:400px;
+    display:inline;
+    position:relative;
+    bottom:30%;
+    left:60%;
+}
+
+header nav ul li {
+    display:inline
+}
+
+header nav ul li a:hover {
+    color:#AAAAAA;
+}
+
+header nav ul li a {
+    color:black;
+    text-decoration:none;
+    margin-left:40px;
+    font-size:40px;
+    text-decoration: none;
+    font-weight:bold;
+}
+
+#weapon_section {
+    width:100%;
+    height:30px;
+    text-align:center;
+    margin-top:20px;
+}
+
+#weapon_section select{
+    width:10%;
+    height:30px;
+}
+
+/* Seleção da quantidade de vidas o jogador irá ter no jogo. */
+#life_section {
+    width:100%;
+    height:25px;
+    text-align:center;
+}
+
+#life_section label {
+    font-size:25px;
+    font-weight:bold;
+    color: #efefef;
+}
+
+#life_section input {
+    display:inline;
+    margin-left:25px;
+}
+
+/* H1 criado por meio do JAVASCRIPT para exibir os PONTOS e o NOME. */
+.h1_pontos {
+    text-align:center;
+    width: 100%;
+    color:#000000;
+}
+
+
+#tabuleiro {
+    margin-top:50px;
+    margin-left:auto;
+    margin-right:auto;
+    width: 50%;
+    height: 50%;
+    background-color: #efefef;
+}
+
+#tabuleiro tr {
+    width: 100%;
+    height: 20%;
+    background-color: snow;
+}
+
+#tabuleiro tr td img {
+    width:90%; height:90%;
+}
+
+#tabuleiro tr td {
+    text-align:center;
+}
+
+#tabuleiro tr td {
+    background-color: rgb(33, 112, 217);
+    width: 20%;
+    height: 100%;
+}
+
+#tabuleiro tr td:hover {
+    background-color: rgb(9, 98, 214);
+}

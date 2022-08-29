@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/icon.png">
+    <title>| Batalha Naval</title>
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="images/icon.png">
+            <ul>
+                <li onclick="initGame()"><a>INICIAR</a></li>
+                <li><a href="index.html" title="Reiniciar o jogo (Recarregar)">REINICIAR</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="life_section">
+    <form>
+        <input name="life_option" type="radio" id="3_lifes" value="3">
+        <label for="3_lifes">3 Vidas</label>
+        <input name="life_option" type="radio" id="5_lifes" value="5">
+        <label for="5_lifes">5 Vidas</label>
+        <input name="life_option" type="radio" id="7_lifes" value="7">
+        <label for="7_lifes">7 Vidas</label>
+    </form>
+    </section>
+
+    <script language="JavaScript">
+        nome = window.prompt("Bem-vindo ao jogo de Batalha Naval! \nQual é o seu nome jogador 1?");
+        pontos = Number.parseInt(0); /* Transformando String >> Int */
+        document.write(`<h1 style='margin-top:40px;' class='h1_pontos' id='sb_points'>Pontos do jogador ${nome}: ${points}</h1>`);
+        document.write(`<h1 class='h1_pontos' id='sb_lifes'>Vidas do jogador ${nome}: ${lifes}</h1>`);
+        createTable();
+    </script>
+    
+    <section id="weapon_section">
+        <select id="weapon_selector" onchange="change_weapon()">
+            <option value="1" selected>Normal</option>
+            <option value="2">Bomba Atomica</option>
+        </select>
+    </section>
+</body>
+
+</html>
